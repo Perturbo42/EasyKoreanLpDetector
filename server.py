@@ -1,6 +1,7 @@
+
+import streamlit as st
 import sys
 st.write(sys.version)
-import streamlit as st
 import numpy as np
 import cv2
 from PIL import Image, ImageDraw, ImageFont
