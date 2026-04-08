@@ -19,7 +19,7 @@ def main():
         st.write(text)
         st.image(im)
         
-@st.cache
+@st.cache_resource
 def load_model():
     car_m = torch.hub.load("ultralytics/yolov5", 'yolov5s', force_reload=True, skip_validation=True)
     lp_m = torch.hub.load('ultralytics/yolov5', 'custom', 'lp_det.pt')
